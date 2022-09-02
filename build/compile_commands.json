@@ -1,0 +1,167 @@
+[
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/examples",
+  "command": "/usr/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_LOCALE -I/Users/wpx/Documents/arap_v2/build/examples -I/usr/local/Cellar/jsoncpp/1.9.5/include -I/Users/wpx/Documents/arap_v2/gl -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/fmt/include -I/Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../external/triangle -I/Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../external/tetgen -isystem /usr/local/Cellar/opencv/4.5.5_3/include/opencv4 -isystem /usr/local/include -isystem /usr/local/include/json -isystem /Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../include -isystem /usr/local/include/eigen3 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -F/Users/wpx/Documents/arap_v2/3rdparty/libManis/macOS -F/Users/wpx/Documents/arap_v2/3rdparty/libmtface/macos_shared  -std=c++17 -o CMakeFiles/face-profiling_bin.dir/face-profiling.cpp.o -c /Users/wpx/Documents/arap_v2/examples/face-profiling.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/examples/face-profiling.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/examples",
+  "command": "/usr/bin/clang++ -DBOOST_ATOMIC_DYN_LINK -DBOOST_ATOMIC_NO_LIB -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DFMT_LOCALE -I/Users/wpx/Documents/arap_v2/build/examples -I/usr/local/Cellar/jsoncpp/1.9.5/include -I/Users/wpx/Documents/arap_v2/gl -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/fmt/include -I/Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../external/triangle -I/Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../external/tetgen -isystem /usr/local/Cellar/opencv/4.5.5_3/include/opencv4 -isystem /usr/local/include -isystem /usr/local/include/json -isystem /Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../include -isystem /usr/local/include/eigen3 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -F/Users/wpx/Documents/arap_v2/3rdparty/libManis/macOS -F/Users/wpx/Documents/arap_v2/3rdparty/libmtface/macos_shared  -std=c++17 -o CMakeFiles/face-profiling_bin.dir/arap.cpp.o -c /Users/wpx/Documents/arap_v2/examples/arap.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/examples/arap.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/tetgen",
+  "command": "/usr/bin/clang++ -DTETLIBRARY   -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=c++17 -o CMakeFiles/tetgen.dir/tetgen.cxx.o -c /Users/wpx/Documents/arap_v2/3rdparty/libigl/external/tetgen/tetgen.cxx",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/libigl/external/tetgen/tetgen.cxx"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/tetgen",
+  "command": "/usr/bin/clang++ -DTETLIBRARY   -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=c++17 -o CMakeFiles/tetgen.dir/predicates.cxx.o -c /Users/wpx/Documents/arap_v2/3rdparty/libigl/external/tetgen/predicates.cxx",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/libigl/external/tetgen/predicates.cxx"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/triangle",
+  "command": "/usr/bin/clang++ -DANSI_DECLARATORS -DTRILIBRARY   -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -std=c++17 -o CMakeFiles/triangle.dir/triangle.cpp.o -c /Users/wpx/Documents/arap_v2/3rdparty/libigl/external/triangle/triangle.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/libigl/external/triangle/triangle.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/3rdparty/fmt",
+  "command": "/usr/bin/clang++ -DFMT_LOCALE -I/Users/wpx/Documents/arap_v2/3rdparty/fmt/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/fmt.dir/src/format.cc.o -c /Users/wpx/Documents/arap_v2/3rdparty/fmt/src/format.cc",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/fmt/src/format.cc"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/3rdparty/fmt",
+  "command": "/usr/bin/clang++ -DFMT_LOCALE -I/Users/wpx/Documents/arap_v2/3rdparty/fmt/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/fmt.dir/src/os.cc.o -c /Users/wpx/Documents/arap_v2/3rdparty/fmt/src/os.cc",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/fmt/src/os.cc"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl",
+  "command": "/usr/bin/clang++ -DFMT_LOCALE -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/gl -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/fmt/include -isystem /usr/local/Cellar/opencv/4.5.5_3/include/opencv4  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/glshow.dir/BackgroundShader.cpp.o -c /Users/wpx/Documents/arap_v2/gl/BackgroundShader.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/gl/BackgroundShader.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl",
+  "command": "/usr/bin/clang++ -DFMT_LOCALE -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/gl -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/fmt/include -isystem /usr/local/Cellar/opencv/4.5.5_3/include/opencv4  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/glshow.dir/GLShader.cpp.o -c /Users/wpx/Documents/arap_v2/gl/GLShader.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/gl/GLShader.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl",
+  "command": "/usr/bin/clang++ -DFMT_LOCALE -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/gl -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/fmt/include -isystem /usr/local/Cellar/opencv/4.5.5_3/include/opencv4  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/glshow.dir/GLShow.cpp.o -c /Users/wpx/Documents/arap_v2/gl/GLShow.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/gl/GLShow.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl",
+  "command": "/usr/bin/clang++ -DFMT_LOCALE -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/gl -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/fmt/include -isystem /usr/local/Cellar/opencv/4.5.5_3/include/opencv4  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/glshow.dir/MeshShader.cpp.o -c /Users/wpx/Documents/arap_v2/gl/MeshShader.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/gl/MeshShader.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/context.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/context.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/init.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/init.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/init.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/input.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/input.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/input.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/monitor.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/monitor.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/vulkan.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/vulkan.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/vulkan.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/window.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/window.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/window.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_init.m",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_init.m"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_joystick.m",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_joystick.m"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_monitor.m",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_monitor.m"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_window.m",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_window.m"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_time.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/cocoa_time.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/posix_thread.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/posix_thread.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/nsgl_context.m",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/nsgl_context.m"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/egl_context.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/egl_context.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_USE_CONFIG_H -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/src -I/Users/wpx/Documents/arap_v2/build/gl/glfw/src  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glfw/src/osmesa_context.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glfw/src/osmesa_context.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/glad",
+  "command": "/usr/bin/clang  -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -o CMakeFiles/glad.dir/src/glad.c.o -c /Users/wpx/Documents/arap_v2/3rdparty/glad/src/glad.c",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/glad/src/glad.c"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/imgui",
+  "command": "/usr/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/imgui.dir/imgui.cpp.o -c /Users/wpx/Documents/arap_v2/3rdparty/imgui/imgui.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/imgui/imgui.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/imgui",
+  "command": "/usr/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /Users/wpx/Documents/arap_v2/3rdparty/imgui/imgui_demo.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/imgui/imgui_demo.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/imgui",
+  "command": "/usr/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /Users/wpx/Documents/arap_v2/3rdparty/imgui/imgui_draw.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/imgui/imgui_draw.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/imgui",
+  "command": "/usr/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /Users/wpx/Documents/arap_v2/3rdparty/imgui/imgui_widgets.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/imgui/imgui_widgets.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/imgui",
+  "command": "/usr/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/imgui.dir/examples/imgui_impl_glfw.cpp.o -c /Users/wpx/Documents/arap_v2/3rdparty/imgui/examples/imgui_impl_glfw.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/imgui/examples/imgui_impl_glfw.cpp"
+},
+{
+  "directory": "/Users/wpx/Documents/arap_v2/build/gl/imgui",
+  "command": "/usr/bin/clang++ -DIMGUI_IMPL_OPENGL_LOADER_GLAD=1 -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/. -I/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples -I/Users/wpx/Documents/arap_v2/3rdparty/glad/include -I/Users/wpx/Documents/arap_v2/3rdparty/glfw/include  -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=c++17 -o CMakeFiles/imgui.dir/examples/imgui_impl_opengl3.cpp.o -c /Users/wpx/Documents/arap_v2/3rdparty/imgui/examples/imgui_impl_opengl3.cpp",
+  "file": "/Users/wpx/Documents/arap_v2/3rdparty/imgui/examples/imgui_impl_opengl3.cpp"
+}
+]

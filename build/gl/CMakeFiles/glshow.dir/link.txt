@@ -1,0 +1,1 @@
+/usr/bin/libtool -c -static -o libglshow.a CMakeFiles/glshow.dir/BackgroundShader.cpp.o CMakeFiles/glshow.dir/GLShader.cpp.o CMakeFiles/glshow.dir/GLShow.cpp.o CMakeFiles/glshow.dir/MeshShader.cpp.o 

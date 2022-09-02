@@ -1,0 +1,882 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "examples/face-profiling_bin"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"app_project",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"set_property",
+			"boost_find_component",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"examples/CMakeLists.txt",
+			"/usr/local/lib/cmake/opencv4/OpenCVModules.cmake",
+			"/usr/local/lib/cmake/opencv4/OpenCVConfig.cmake",
+			"/usr/local/lib/cmake/boost_filesystem-1.79.0/boost_filesystem-config.cmake",
+			"/usr/local/lib/cmake/Boost-1.79.0/BoostConfig.cmake",
+			"/Applications/CMake.app/Contents/share/cmake-3.23/Modules/FindBoost.cmake",
+			"gl/CMakeLists.txt",
+			"3rdparty/glfw/src/CMakeLists.txt",
+			"3rdparty/libigl/cmake/libigl.cmake",
+			"cmake/FindLIBIGL.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 95,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"file" : 2,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 126,
+				"parent" : 8
+			},
+			{
+				"file" : 1,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 262,
+				"parent" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 594,
+				"parent" : 13
+			},
+			{
+				"file" : 4,
+				"parent" : 14
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 262,
+				"parent" : 15
+			},
+			{
+				"command" : 5,
+				"file" : 4,
+				"line" : 141,
+				"parent" : 16
+			},
+			{
+				"file" : 3,
+				"parent" : 17
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 103,
+				"parent" : 18
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 34,
+				"parent" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 25,
+				"parent" : 20
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 144,
+				"parent" : 23
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 29,
+				"parent" : 20
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 39,
+				"parent" : 20
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 5,
+				"file" : 10,
+				"line" : 51,
+				"parent" : 27
+			},
+			{
+				"file" : 9,
+				"parent" : 28
+			},
+			{
+				"command" : 4,
+				"file" : 9,
+				"line" : 20,
+				"parent" : 29
+			},
+			{
+				"file" : 8,
+				"parent" : 30
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 448,
+				"parent" : 31
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 435,
+				"parent" : 31
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 1
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -F/Users/wpx/Documents/arap_v2/3rdparty/libManis/macOS -F/Users/wpx/Documents/arap_v2/3rdparty/libmtface/macos_shared "
+				},
+				{
+					"fragment" : "-std=c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_ATOMIC_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_ATOMIC_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_FILESYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_FILESYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_PROGRAM_OPTIONS_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_PROGRAM_OPTIONS_NO_LIB"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_SYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "BOOST_SYSTEM_NO_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "FMT_LOCALE"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 35,
+					"path" : "/Users/wpx/Documents/arap_v2/build/examples"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "/usr/local/Cellar/jsoncpp/1.9.5/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/wpx/Documents/arap_v2/gl"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/wpx/Documents/arap_v2/3rdparty/glfw/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/wpx/Documents/arap_v2/3rdparty/glad/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/wpx/Documents/arap_v2/3rdparty/imgui/."
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/wpx/Documents/arap_v2/3rdparty/imgui/./examples"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/wpx/Documents/arap_v2/3rdparty/fmt/include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "/Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../external/triangle"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "/Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../external/tetgen"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "/usr/local/Cellar/opencv/4.5.5_3/include/opencv4"
+				},
+				{
+					"backtrace" : 37,
+					"isSystem" : true,
+					"path" : "/usr/local/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/local/include/json"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "/Users/wpx/Documents/arap_v2/3rdparty/libigl/cmake/../include"
+				},
+				{
+					"backtrace" : 34,
+					"isSystem" : true,
+					"path" : "/usr/local/include/eigen3"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3,
+					5
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 34,
+			"id" : "tetgen::@a855c54b6a7cf732f690"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "triangle::@b111b4ee102bb71d3be9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "fmt::@99b488b5ce7e6b2029cf"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "glshow::@f8f384f4ca99486aa5d9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "glfw::@4214935d714f039fa9ae"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "glad::@4694da63c9bdcb2a9f32"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "imgui::@343e1e44f9603351df4c"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "App"
+	},
+	"id" : "face-profiling_bin::@714eac15f71a94114fdf",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-F/Users/wpx/Documents/arap_v2/3rdparty/libManis/macOS -F/Users/wpx/Documents/arap_v2/3rdparty/libmtface/macos_shared",
+				"role" : "frameworkPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib -Wl,-rpath,/Users/wpx/Documents/arap_v2/3rdparty/libManis/macOS -Wl,-rpath,/Users/wpx/Documents/arap_v2/3rdparty/libmtface/macos_shared",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libopencv_highgui.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libboost_system-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libboost_filesystem-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libboost_program_options-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../gl/libglshow.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "../3rdparty/fmt/libfmtd.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/usr/local/lib/libjsoncpp.dylib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "Manis",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "mtface",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/usr/local/lib/libopencv_videoio.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libopencv_imgcodecs.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libopencv_imgproc.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/usr/local/lib/libopencv_core.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "/usr/local/lib/libboost_atomic-mt.dylib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-framework",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "../gl/imgui/libimgui.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "../gl/glfw/src/libglfw3.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-framework Cocoa",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-framework IOKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-framework CoreFoundation",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 24,
+				"fragment" : "-framework CoreVideo",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "../gl/glad/libglad.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_gapi.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_stitching.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_alphamat.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_aruco.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_barcode.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_bgsegm.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_bioinspired.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_ccalib.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_dnn_objdetect.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_dnn_superres.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_dpm.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_face.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_freetype.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_fuzzy.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_hfs.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_img_hash.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_intensity_transform.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_line_descriptor.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_mcc.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_quality.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_rapid.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_reg.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_rgbd.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_saliency.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_sfm.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_stereo.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_structured_light.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_phase_unwrapping.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_superres.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_optflow.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_surface_matching.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_tracking.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_highgui.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_datasets.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_plot.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_text.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_videostab.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_videoio.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_viz.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_wechat_qrcode.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_xfeatures2d.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_ml.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_shape.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_ximgproc.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_video.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_xobjdetect.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_imgcodecs.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_objdetect.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_calib3d.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_dnn.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_features2d.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_flann.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_xphoto.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_photo.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_imgproc.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 26,
+				"fragment" : "/usr/local/lib/libopencv_core.4.5.5.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 32,
+				"fragment" : "../triangle/libtriangle.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "../tetgen/libtetgen.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "face-profiling_bin",
+	"nameOnDisk" : "face-profiling_bin",
+	"paths" : 
+	{
+		"build" : "examples",
+		"source" : "examples"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "examples/face-profiling.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "examples/arap.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

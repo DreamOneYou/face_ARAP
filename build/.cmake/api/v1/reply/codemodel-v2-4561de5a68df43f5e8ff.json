@@ -1,0 +1,339 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "examples",
+					"jsonFile" : "directory-examples-Debug-1c8b83b621b6ef38a245.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "examples",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "tetgen",
+					"jsonFile" : "directory-tetgen-Debug-65f5318f9241669cd290.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "3rdparty/libigl/external/tetgen",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "triangle",
+					"jsonFile" : "directory-triangle-Debug-a5c0d01c65808e4e57d4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "3rdparty/libigl/external/triangle",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "3rdparty/fmt",
+					"jsonFile" : "directory-3rdparty.fmt-Debug-fab1dcd986d56f976fb7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "3rdparty/fmt",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "gl",
+					"childIndexes" : 
+					[
+						6,
+						8,
+						9
+					],
+					"jsonFile" : "directory-gl-Debug-cb57dd89ca033f11d1fe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "gl",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "gl/glfw",
+					"childIndexes" : 
+					[
+						7
+					],
+					"jsonFile" : "directory-gl.glfw-Debug-8f4c154c4aa0d4bc1faf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 5,
+					"source" : "3rdparty/glfw"
+				},
+				{
+					"build" : "gl/glfw/src",
+					"jsonFile" : "directory-gl.glfw.src-Debug-b03a1d947f7ad393d91a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 5,
+					"source" : "3rdparty/glfw/src",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "gl/glad",
+					"jsonFile" : "directory-gl.glad-Debug-770b7ff09607379576a0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 6,
+					"source" : "3rdparty/glad",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "gl/imgui",
+					"jsonFile" : "directory-gl.imgui-Debug-ae8e2b8b4aa8df373589.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 0,
+					"source" : "3rdparty/imgui",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						5,
+						9
+					],
+					"name" : "face_profiling",
+					"targetIndexes" : 
+					[
+						4,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "face-profiling_pro",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "tetgen",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "triangle",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "FMT",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6,
+						7
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "glad",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "face-profiling_bin::@714eac15f71a94114fdf",
+					"jsonFile" : "target-face-profiling_bin-Debug-5be46c5f918001a17dc4.json",
+					"name" : "face-profiling_bin",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "fmt::@99b488b5ce7e6b2029cf",
+					"jsonFile" : "target-fmt-Debug-f72ad39fac8ee1d1b4db.json",
+					"name" : "fmt",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "glad::@4694da63c9bdcb2a9f32",
+					"jsonFile" : "target-glad-Debug-5bdfbf2c0dbdcf5021b6.json",
+					"name" : "glad",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "glfw::@4214935d714f039fa9ae",
+					"jsonFile" : "target-glfw-Debug-68512b0e774fde49a603.json",
+					"name" : "glfw",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "glshow::@f8f384f4ca99486aa5d9",
+					"jsonFile" : "target-glshow-Debug-780caaa6361e141643fe.json",
+					"name" : "glshow",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "imgui::@343e1e44f9603351df4c",
+					"jsonFile" : "target-imgui-Debug-a776353346d2eb42b4dc.json",
+					"name" : "imgui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "tetgen::@a855c54b6a7cf732f690",
+					"jsonFile" : "target-tetgen-Debug-8c9909e87d93c71f15a8.json",
+					"name" : "tetgen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "triangle::@b111b4ee102bb71d3be9",
+					"jsonFile" : "target-triangle-Debug-5e385516eb5395fdfdee.json",
+					"name" : "triangle",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/wpx/Documents/arap_v2/build",
+		"source" : "/Users/wpx/Documents/arap_v2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
