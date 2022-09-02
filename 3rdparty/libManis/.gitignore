@@ -1,0 +1,13 @@
+*.a
+
+/iOS/arm64
+/iOS/armv7
+/iOS/x86_64
+
+/demo/android_gl/build
+demo/android_cpu/build
+.setuptools-cmake-build
+build
+pymanis.egg-info
+android_hiai_npu
+dist
