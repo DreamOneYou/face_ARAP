@@ -26,3 +26,7 @@ From within the `build` directory issue one of those commands, or any variant th
     cd examples
     <!-- ./face-profiling_bin /Users/wpx/Documents/data/nose_validata/inputs_v1/obj_50/IMG_6265.JPG -->
     ./face-profiling_bin /Users/wpx/Documents/data/整理后2d_3d_人脸属性_人脸点/inputs/image/小鼻子.jpeg /Users/wpx/Documents/data/整理后2d_3d_人脸属性_人脸点/inputs/jsons/小鼻子.jpeg.json
+    
+## 效果
+![before](https://github.com/DreamOneYou/face_ARAP/tree/main/data/testDATA/before/中胡.jpg)
+![after](https://github.com/DreamOneYou/face_ARAP/tree/main/data/testDATA/after/中胡.jpg)
