@@ -18,10 +18,13 @@ static double compute_area(const Mesh& mesh) {
 }
 
 Eigen::SparseMatrix<double> cotangent_weights(const Mesh& mesh, const std::vector<Eigen::Index>& swizzle) {
+    clock_t startss,endss;
+    startss = clock(); 
+
     Eigen::SparseMatrix<double> weights(mesh.V.rows(), mesh.V.rows());
     std::vector<Eigen::Triplet<double>> triplets;
     triplets.reserve(18 * mesh.F.rows());
-
+    // for循环耗时0.03s
     for (int fid = 0; fid < mesh.F.rows(); fid++) {
         Eigen::Vector3i v = mesh.F.row(fid);  // 当前的下标为fid的face值
 
@@ -63,9 +66,12 @@ Eigen::SparseMatrix<double> cotangent_weights(const Mesh& mesh, const std::vecto
         }
 
     }
+    // endss = clock();  
+    // std::cout<<"1timesss = "<<double(endss-startss)/CLOCKS_PER_SEC<<"s"<<std::endl;
     // 聚合三元组中重复的值。使用了DupFunctor函数，不太理解怎么处理的，难道删除了？
-    weights.setFromTriplets(triplets.begin(), triplets.end());
-
+    weights.setFromTriplets(triplets.begin(), triplets.end());  // 耗时0.05s
+    // endss = clock();  
+    // std::cout<<"2timesss = "<<double(endss-startss)/CLOCKS_PER_SEC<<"s"<<std::endl;
 //将某些边的权重低于0的直接赋予0，说明这些边并没有参与变换
 #ifdef CLAMP_WIJ_TO_ZERO
 
@@ -76,8 +82,8 @@ Eigen::SparseMatrix<double> cotangent_weights(const Mesh& mesh, const std::vecto
 	for (Eigen::SparseMatrix<double>::InnerIterator it(weights,k); it; ++it) {
         // 应该还可以查到另外三种值，it的行数row，列数col以及下标index。
 	    if (it.value() < 0.0) {
-        // coedRef:利用二分查找，较为耗时，
-		weights.coeffRef(it.row(), it.col()) = 0.0;
+            // coedRef:利用二分查找，较为耗时，
+		    weights.coeffRef(it.row(), it.col()) = 0.0;
 		// std::cout << "[WARNING] Ignoring edge " << it.row() << " - " << it.col() << "value:"<<it.value()<<"\n";
 	    }
         // std::cout << "[WARNING] Ignoring edge " << it.row() << " - " << it.col() << "value:"<<it.value()<<"\n";
@@ -90,17 +96,19 @@ Eigen::SparseMatrix<double> cotangent_weights(const Mesh& mesh, const std::vecto
 
 Eigen::SparseMatrix<double> laplacian_matrix(
     const Eigen::SparseMatrix<double>& weights) {
-    
-    Eigen::SparseMatrix<double> mat = -weights;
+    clock_t startss,endss;
+    startss = clock(); 
 
-    for (int k=0; k < mat.outerSize(); ++k) {
+    Eigen::SparseMatrix<double> mat = -weights;  // 构造一个加权度矩阵，从i出发，所有边权重之和
+    for (int k=0; k < mat.outerSize(); ++k) { // 计算所有顶点的拉普拉斯矩阵
         double colsum = 0;
         for (Eigen::SparseMatrix<double>::InnerIterator it(mat,k); it; ++it) {
             colsum += it.value();
         }
-        mat.coeffRef(k, k) = -colsum; //对角线赋予权重，假设是三维矩阵，那么就是将每一列的权重值累加并取负，之后赋予到对角线上。
+        mat.coeffRef(k, k) = -colsum; //对角线赋予权重，假设是三维矩阵，那么就是将每一列的权重值累加并取负，之后赋予到对角线上。  
     }
-
+    // endss = clock();  
+    // std::cout<<"11timesss = "<<double(endss-startss)/CLOCKS_PER_SEC<<"s"<<std::endl;
     return mat;
 }
 
@@ -173,7 +181,7 @@ std::vector<Eigen::Index> reciprocal(const std::vector<Eigen::Index>& v) {
         如果关键点为：0，1，2，3。总的关键点为3520。则r数组为[4,5,6...,3518,3519, 0, 1, 2, 3]
     */
     for (int i = 0; i < v.size(); i++) {
-	r[v[i]] = i;
+	    r[v[i]] = i;
     }
 
     
@@ -241,28 +249,37 @@ bool system_bind(LaplacianSystem& system, const std::vector<FixedVertex>& fixed_
 }
 
 bool system_bind1(LaplacianSystem& system, const std::vector<FixedVertex>& fixed_vertices) {
+    clock_t startss,endss;
+    startss = clock(); 
+
     system.V0 = system.mesh->V;
     system.is_bound = true;
     // std::cout<<"system_bind:"<<fixed_vertices[0].index<<std::endl;
     
     system.free_dimension = system.mesh->V.rows() - fixed_vertices.size();
-    
+    // endss = clock();  
+    // std::cout<<"1timesss = "<<double(endss-startss)/CLOCKS_PER_SEC<<"s"<<std::endl;
     system.swizzle = swizzle_from(system.mesh->V.rows(), fixed_vertices);
+
     system.deswizzle = reciprocal(system.swizzle);
+  
 	//计算边的权重，其实也计算了每个cell的权重
-    system.cotangent_weights = cotangent_weights(*system.mesh, system.swizzle);
+    system.cotangent_weights = cotangent_weights(*system.mesh, system.swizzle);  // 0.08s
+ 
     //只有对角线的值>0,其他位置<0;
-    Eigen::SparseMatrix<double> m = laplacian_matrix(system.cotangent_weights); 
+    Eigen::SparseMatrix<double> m = laplacian_matrix(system.cotangent_weights); // 0.09s
+   
     // 得到一个system.free_dimension行， system.free_dimension列的laplacian矩阵
     system.laplacian_matrix = m.block(0, 0, system.free_dimension, system.free_dimension);
+    
     // 从0行system.free_dimension列出发，返回大小为system.free_dimension行, fixed_vertices.size()列的矩阵。
     system.fixed_constraint_matrix = m.block(0, system.free_dimension,
 					     system.free_dimension, fixed_vertices.size());
-    
+
     system.rhs.resize(system.free_dimension, 3);
     // 计算厄米特矩阵（Hermitian矩阵）。
     // Hermitian矩阵：矩阵中每一个第i行第j列的元素都与第j行第i列的元素的共轭相等。埃尔米特矩阵主对角线上的元素都是实数的，其特征值也是实数。
-    system.solver.compute(system.laplacian_matrix); // 先对矩阵进行分解，然后求解线性方程组的解。
+    system.solver.compute(system.laplacian_matrix); // 先对矩阵进行分解，然后求解线性方程组的解。  0.07s
     /*
         在compute()函数中，将对矩阵进行分解。为了更加精确的求解，compute ()函数计算步骤又进一步细分为2步：
             analyzePattern()：记录矩阵中的非零元素，以便分解步骤中创建更少的fill-in
@@ -274,7 +291,6 @@ bool system_bind1(LaplacianSystem& system, const std::vector<FixedVertex>& fixed
         // std::cout<<"solve filed"<<std::endl;
 	    return false;
     }
-
     // std::cout << "Cotangent weights :\n" << system.cotangent_weights << "\n";
     // std::cout << "Laplacian matrix :\n" << system.laplacian_matrix << "\n";
     // std::cout << "A matrix :\n" << system.fixed_constraint_matrix << "\n";
@@ -292,49 +308,59 @@ bool system_iterate(LaplacianSystem& system) {
     /* --- Fill system's right hand side --- */
     
     system.rhs.setZero();
-
+    // 这两个for需要 0.1s
     for (int v = 0; v < system.free_dimension; v++) {
-	for (Eigen::SparseMatrix<double>::InnerIterator
-		 it(system.cotangent_weights, v);
-	     it;
-	     ++it) {
-        
-	    Eigen::Index v_idx[2] = {
-		system.deswizzle[it.col()],
-		system.deswizzle[it.row()],
-	    };
-        // std::cout<<"row::"<<it.row()<<"  col:"<<it.col()<<"  value:"<<it.value()<<"\n";
-        // std::cout<<"v_idx[0]::"<<v_idx[0]<<"  v_idx[1]:"<<v_idx[1]<<"\n";
-	    Eigen::RowVector3d d = .5 * it.value() *
-		(system.V0.row(v_idx[0]) - system.V0.row(v_idx[1])) *
-		(system.optimal_rotations[it.row()] + system.optimal_rotations[it.col()]).transpose();
+        // 每一个mesh点，与之有相互关系的点有六个（边缘部分点复杂）。因此，一个点的移动，会同时带动六个点的权重改变。所以下面通常会跑六次
+        for (Eigen::SparseMatrix<double>::InnerIterator it(system.cotangent_weights, v); it; ++it) {
+            
+            Eigen::Index v_idx[2] = {
+                system.deswizzle[it.col()],
+                system.deswizzle[it.row()],
+            };
+            /*
+                通常v_idx[0]表示中心点，v_idx[1]表示与之相关的点，
+                3424 2690
+                3424 2704
+                3424 3404
+                3424 3405
+                3424 3410
+                3424 3423
+            */
 
-	    system.rhs.row(v) += d;
-        // std::cout<<"deformation:"<<system.rhs.row(v)<<"\n";
-	} 
+            // 一般system.optimal_rotations[it.row()]和system.optimal_rotations[it.col()]是一个3x3的对角阵。
+            /*
+            1 0 0 
+            0 1 0
+            0 0 1
+            */
+            Eigen::RowVector3d d = .5 * it.value() *
+            (system.V0.row(v_idx[0]) - system.V0.row(v_idx[1])) *  
+            (system.optimal_rotations[it.row()] + system.optimal_rotations[it.col()]).transpose();
+            system.rhs.row(v) += d;
+        } 
+        // std::cout<<"rhs: "<<system.rhs.row(v)<<std::endl;
     } 
 
     int n_fixed = system.mesh->V.rows() - system.free_dimension;
     Eigen::Matrix<double, Eigen::Dynamic, 3>
 	V_fixed(n_fixed, 3);
-    
+    // 这个for需要6e-06s
     for (int i = 0; i < n_fixed; i++) {
         // std::cout<<"V_fixed.row(i) :"<<V_fixed.row(i)<<"   deswizzle:"<<system.mesh->V.row(system.deswizzle[system.free_dimension + i])<<"\n";
-	V_fixed.row(i) =
-	    system.mesh->V.row(system.deswizzle[system.free_dimension + i]);
+        V_fixed.row(i) =
+            system.mesh->V.row(system.deswizzle[system.free_dimension + i]);
     }
 
     system.rhs -= system.fixed_constraint_matrix * V_fixed;
     
     Eigen::Matrix<double, Eigen::Dynamic, 3> solutions(system.free_dimension, 3);
-    // std::cout<<"system.free_dimension:"<<solutions(system.free_dimension, 3)<<"\n";
-    for (int i = 0; i < 3; i++) {
-	solutions.col(i) = system.solver.solve(system.rhs.col(i));
     
-	
-	if (system.solver.info() != Eigen::Success) {
-	    return false;
-	}
+    // 这个for需要0.033
+    for (int i = 0; i < 3; i++) {
+        solutions.col(i) = system.solver.solve(system.rhs.col(i));
+        if (system.solver.info() != Eigen::Success) {
+            return false;
+        }
     }
     assert((system.laplacian_matrix * solutions
 	    - system.rhs).norm() < 1e-3);
