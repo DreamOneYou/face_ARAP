@@ -28,5 +28,5 @@ From within the `build` directory issue one of those commands, or any variant th
     ./face-profiling_bin /Users/wpx/Documents/data/整理后2d_3d_人脸属性_人脸点/inputs/image/小鼻子.jpeg /Users/wpx/Documents/data/整理后2d_3d_人脸属性_人脸点/inputs/jsons/小鼻子.jpeg.json
     
 ## 效果
-![before](https://github.com/DreamOneYou/face_ARAP/tree/main/data/testDATA/before/中胡.jpg)
-![after](https://github.com/DreamOneYou/face_ARAP/tree/main/data/testDATA/after/中胡.jpg)
+![before](https://github.com/DreamOneYou/face_ARAP/blob/main/data/testDATA/before/%E4%B8%AD%E8%83%A1.jpg)
+![after](https://github.com/DreamOneYou/face_ARAP/blob/main/data/testDATA/after/%E4%B8%AD%E8%83%A1.jpg)
